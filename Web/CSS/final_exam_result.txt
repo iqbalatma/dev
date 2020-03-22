@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SMANTI</title>
+    <link rel="stylesheet" href="9_Praktek2.css">
+</head>
+
+<body>
+
+    <div class="kontainer">
+        <div class="header">
+            <h1 class="judul">SMA Negeri 3 Singkawang</h1>
+            <ul>
+                <li><a href="#" target="main">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Final Exam Results</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="hero">
+
+        </div>
+
+        <div class="konten cf">
+            <div class="main" name="main">
+                <h2 class="sub_judul">Judul Artikel</h2>
+                <br>
+
+                <p>Pernah merasakan sesuatu yang dekat tetapi terasa jauh dan sesuatu yang jauh terasa dekat ? Bukankah
+                    selama ini jauh dan dekat adalah perihal jarak ? Apakah keterkaitan dua hal tersebut merupakan
+                    sesuatu
+                    yang salah atau kita terlalu berlebihan dalam menjelaskan sesuatu ?</p>
+                <p>Beberapa orang mungkin setuju bahwa jauh dan dekat tidak selalu soal jarak yang dapat dihitung
+                    secara
+                    matematis dan di ekspresikan dengan angka. Tidak semua jarak selesai dengan langkah. Tidak semua
+                    jarak
+                    dapat digambarkan secara fisik. Justru ada jarak yang sungguh sangat menyiksa yang tidak dapat
+                    diobati
+                    dengan langkah. Jarak yang bicara tentang sesuatu yang tidak dapat dilihat. Jarak tentang rasa.</p>
+                <p>Betapa jauhnya jarak seseorang ketika mencintai sesuatu yang ternyata tidak mencintainya. Betapa
+                    jauhnya
+                    ketika seseorang ketika merindukan sendiri-sendiri. Betapa jauhnya jarak seseorang ketika yang ia
+                    perjuangkan ternyata berniat khianat.
+
+                    Semua jarak yang jauhnya semu ini mungkin bukan hanya aku yang merasa. Bukan hanya aku yang punya.
+                    Lantas bagaimana menaklukkan jarak yang bahkan tidak dapat dilakukan dengan langkah ? Yang bahkan
+                    hukum
+                    fisika tidak berlaku disini.
+
+                    Belajarlah bermimpi, kau akan temui jawabannya. </p>
+            </div>
+
+            <div class="sidebar">
+                <div class="h3">Tentang Penulis</div>
+                <!--<img src="img/Foto1.jpg">-->
+                <p>Iqbal Atma Muliawan merupakan mahasiswa Universitas Komputer Indonesia
+                    jurusan Teknik Informatika. Berasal dari Kalimantan Barat, menyenangi fotografi
+                    dan juga puisi. Aktif di organisasi internal kampus seperti Himpunan Mahaiswa Teknik
+                    Informatika
+
+                </p>
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="footer">
+            <div class="copy">Copyright 2018. Informatics Engineering</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

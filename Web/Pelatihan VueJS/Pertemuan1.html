@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <h2>Hello World !!</h2>
+    <div id="app">
+        <h2>{{ title }}</h2>
+        <h3>{{ greet('evening') }}</h3>
+        <h4>{{ umur(20) }}</h4>
+        <h5>{{ penjumlahan(4,5) }}</h5>
+        <p>My Name is {{ namaSatu }}</p>
+        <input type="text" v-model="namaSatu">
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

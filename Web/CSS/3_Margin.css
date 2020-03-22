@@ -1,0 +1,59 @@
+body{ 
+    color: black;
+}
+
+div{
+    display: inline-block;
+}
+.satu {
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 70px;
+}
+
+.dua{
+    width: 200px;
+    height: 20px;
+    background-color: cornflowerblue;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.tiga{
+    width: 20px;
+    height: 300px;
+    background-color: saddlebrown;
+}
+
+.lima{
+    width: 50px;
+    height: 20px;
+    background-color: yellow;
+    margin-left: -50px;
+}
+
+.empat{
+    width: 50px;
+    height: 25px;
+    background-color: crimson;
+}
+
+/*M  A  R  G  I  N
+margin adalah garis transparan diluar elemen*/
+
+/*jika vertikal, margin yang jadi patokan adalah yang terbesar
+jika horizontal kedua margin kiri dan kanan digabung dan saling dorong*/
+
+/*negatif margin bergerak kearah berlawanan*/
+
+/*auto khusus untuk margin kiri dan kanan, harus kedua2nya tidak boleh salah satu.artboard
+Nilai auto membuat elemen berada ditengah tengah parentnya. Pada contoh diatas div memiliki parent body*/
+
+/*nilai margin. (50px //keempat sisinya bernilai 50pixel), (50px, 100px //atas bawah bernilai 50px 
+dan kiri kanan bernilai 100px. Kiri dan kanan bisa menggunakan auto), (30px, 40px, 50px //atas bernilai 30, 
+kiri dan kanan bernilai 40px, bawah bernilai 50px. Kiri dan kanan bisa diubah menjadi auto.) 
+(50px 60px 70px 80px //dibaca sesuai arah jarum jam*/

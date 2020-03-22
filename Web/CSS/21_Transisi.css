@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: margin-left 1s;
+}
+
+.container {
+    width: 900px;
+    margin: 10px auto;
+    border: 5px solid black;
+
+}
+
+.container:hover .kotak {
+    /*pada saat container di hover, maka kotak di dalamnya akan menerima fungsi*/
+    transform: rotate(45deg);
+    margin-left: 800px;
+    background-color: darkcyan;
+}

@@ -1,0 +1,52 @@
+/*div {
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    margin: 20px auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    border : 3px dashed blue;
+}
+*/
+
+
+div{
+    width: 600px;
+    margin: 50px auto;
+    box-sizing: border-box;
+
+}
+
+.dua{
+    background-color: tomato;
+    padding: 10px;
+    border : 15px solid black;
+}
+
+.tiga{
+    background-color: teal;
+    padding: 30px;
+    border : 10px dashed  red;
+}
+/*P  A  D  D  I  N  G
+digunakan untuk memberi jarak antara tulisan dan kotak elemen
+*/
+
+/*Nilainya(isi value pading) sama dengan margin
+Padding tidak bisa negatif
+Padding tidak bisa auto
+Padding bisa memengaruhi ukuran kotak
+Jika kotak 300x300 px, dan di Padding kiri kanan 50px
+maka kotak tersebut ukurannya bertambah menjadi 350x350px
+*/
+
+/* B  O  R  D  E  R
+Digunakan untuk memberi garis/bingkai pada kotak elemen.
+Nilai pada border : widht style color
+border : 5px solid black
+style : solid, dotted, dahsed, double
+Penulisannya juga bisa dipisah.
+Border juga bisa digunakan hanya untuk satu sisi saja, 
+seperti margin.
+Border memengaruhi ukuran kotak.
+*/

@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+img {
+    filter: blur(10px);
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+    filter: saturate(140%);
+    filter: grayscale(100%);
+    filter: sepia(100%);
+    filter: hue-rotate(100deg);
+    filter: invert(100%);
+}

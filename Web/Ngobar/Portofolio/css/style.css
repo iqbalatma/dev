@@ -1,0 +1,83 @@
+.jumbotron img {
+    width: 200px;
+    border: 5px solid black;
+}
+
+hr {
+    width: 250px;
+    border-top: 3px solid #666;
+}
+
+section {
+    min-height: 750px;
+}
+
+
+.portfolio {
+    background-color: #eee;
+}
+
+
+html {
+    position: relative;
+}
+
+body {
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+.jumbotron {
+    background-image: url('../img/pr.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+    overflow: hidden;
+    /* untuk mengubah posisi */
+}
+
+.jumbotron h1,
+.jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5)
+}
+
+.contact {
+    min-height: 800px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    color: #aaa;
+    padding-top: 20px;
+
+}
+
+footer p {
+    color: #aaa;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.kontak {
+    margin: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(206, 206, 206);
+    padding: 10px;
+    padding-left: 20px;
+    border: 4px solid goldenrod;
+    border-radius: 20px;
+
+}
+
+.about p {
+    line-height: 35px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+
+}

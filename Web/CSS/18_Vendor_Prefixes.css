@@ -1,0 +1,17 @@
+h1 {
+    color: brown;
+}
+
+body {
+    text-align: center;
+}
+
+/* -webkit- (untuk chrome safari opera terbaru)
+-moz- (untuk firefox)
+-ms- (untuk internet explorer)
+-o- (untuk opera versi lama)
+*/
+img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}

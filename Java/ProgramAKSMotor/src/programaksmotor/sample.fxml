@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<GridPane
+    xmlns:fx="http://javafx.com/fxml/1"
+    xmlns="http://javafx.com/javafx/8.0.121"
+    fx:controller="sample.Controller"
+    alignment="center" hgap="10" vgap="10">
+    <Label text="Pendataan Aksesoris Kendaraan" textFill="purple"
+    GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <!--kode Barang-->
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Label text="Kode Barang"/>
+        <TextField fx:id="tfKode" focusTraversable="false"
+        promptText="Masukkan Kode Barang"/>
+    </VBox>
+    <!--Nama Barang-->
+     <VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <Label text="Nama Barang"/>
+        <TextField fx:id="tfNama" focusTraversable="false"
+        promptText="Masukkan Kode Nama"/>
+    </VBox>
+    <!--Harga Barang-->
+     <VBox GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <Label text="Harga Barang"/>
+        <TextField fx:id="tfHrg" focusTraversable="false"
+        promptText="Masukkan Harga Barang"/>
+    </VBox> 
+    <!--Stok Barang-->
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <Label text="Kode Barang"/>
+        <TextField fx:id="tfStok" focusTraversable="false"
+        promptText="Masukkan Stok Barang"/>
+    </VBox>
+    <!--Button submit data Barang-->
+    <Button fx:id="btnSubmit" text="Submit" textAlignment="Center"
+    GridPane.columnIndex="0" GridPane.rowIndex="5"
+        onAction="#onButtonClicked"/>
+        
+    <!--Table View data Aksesoris Kendaraan-->
+    <TableView fx:id="tvDataAksesoris" GridPane.columnIndex="0"
+      GridPane.rowIndex="9"
+      maxHeight="150"> 
+          <!--Kolom dalam tabel-->
+          <columns>
+              <!--kolom kode barang-->
+              <TableColumn text="Kode Barang">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="Kode"/>
+                  </cellValueFactory>
+              </TableColumn>
+               <!--kolom kode Nama Brang-->
+              <TableColumn text="Nama Aksesoris" prefWidth="150">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="Nama"/>
+                  </cellValueFactory>
+              </TableColumn>
+               <!--kolom Harga barang-->
+              <TableColumn text="Harga Aksesoris"prefWidth="100">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="Harga"/>
+                  </cellValueFactory>
+              </TableColumn>
+               <!--kolom Stok barang-->
+               <TableColumn text="Stok"prefWidth="50">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="Stok"/>
+                  </cellValueFactory>
+              </TableColumn>
+          </columns>  
+    </TableView>   
+    
+    <!--Button untuk operasi file (Save and Load)-->
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="10" spacing="20">
+    <Button fx:id="btnSave" text="Save Data to File"
+        textAlignment="Center"
+        onAction="#onButtonClicked"/>
+    <Button fx:id="btnLoad" text="Load Data Form Saved File"
+        textAlignment="Center"
+        onAction="#onButtonClicked"/>
+    </HBox>
+</GridPane>

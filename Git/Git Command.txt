@@ -1,0 +1,18 @@
+cd = change directory
+cd .. = mundur 1 folder
+git init = membuat sebuah folder menjadi repo
+git add "namafile" = memindahkan ke stagging area
+git add . = memindahkan semua file k stagging area
+git status = untuk mengetahui status file
+git commit -m "Pesan commit" = untuk melakukan commit
+git branch "nama branch" = untuk membuat branchg
+git branch = untuk menampilkan branch yang ada
+alias "nama alias"="command line"  = membuat alias
+git chechout "nama branch" = pindah headh branch
+git branch -d "nama branch" = menghapus branch
+alias graph="git log --all --decorate --oneline --graph"
+git remote add "nama remote" "link repo" = Untuk menambahkan remote
+git push -u "nama remote"  "nama branch"  = untuk mengupload revisi atau perubahan yang terjadi dari lokal k repo
+git fetch "nama remote" "nama branch"   = untuk mengambil commit pada repo untuk di gabungkan di lokal (digunakan jika di lokal terjadi perubahan sehingga ambil commitnya terlebih dahulu)
+git pull "nama remote" "nama branch"   = untuk mengambil commit dan file dari repo untuk dimasukkan kedalam lokal (dilakukan jika belum terjadi perubahan pada repo lokal)
+git merge untuk menggabungkan repo remote dan lokal

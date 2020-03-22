@@ -1,0 +1,165 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9cm;
+    color: #127DA1; /*mengubah warna*/
+    align-content: center;
+    align-items: center;
+    text-align: center; /*digunakan untuk mengubah posisi tulisan*/
+    font-variant: small-caps; /*digunakan untuk membuat tulisan yang huruf kecil menjadi huruf 
+                                kapital dan huruf kapital lebih besar dari huruf kecil*/
+
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace; /*digunakan untuk mengubah jenis font*/
+    font-size: 15px;  /*digunakan untuk mengubah jenis font*/
+    font-style: italic; /*digunakan untuk mengubah style font, misalnya jadi miring*/
+    line-height: 3px; /*digunakan untuk mengubah jarak antara baris tiap enter*/
+    font-weight: bolder; /*digunakan untuk mengubah ketebalan font*/
+    letter-spacing: 2px
+}
+
+artboard {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+}
+
+artboard:hover .buttonx {
+    -webkit-transform: rotate(-75deg);
+            transform: rotate(-75deg);
+
+
+}
+
+buttonx, links {
+    display: inline-block;
+    width: 200px;
+    height: 66.667;
+    background: #6cb4b8;
+}
+
+buttonx i, buttonx a, links i, links a{
+    position: absolute;
+    left: 50%;
+    top : 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color : white;
+}
+
+buttonx i, links i{
+    font-size: 25px;
+}
+
+buttonx {
+    z-index: 11;
+    transition: 950ms cubic-bezier(0.89, 0.03, 0.06, 1.5);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+}
+
+links {
+    position: absolute;
+    z-index: 9;
+    background: #da7015;
+}
+links a{
+    text-decoration: none;
+}
+
+/*Belajar Selector*/
+
+.pro{ /*untuk kelas diawali dengan tanda titik.*/
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.cetak_tebal{
+    font-weight: bold;
+}
+
+
+ul { /*ul untuk mengubah selector ul. Berarti yang diubah adalah titik/dotnya.*/
+    color: darkblue;
+    font-size: 20px;
+}
+
+/*ul li a{    /*Artinya yang akan di ubah adalah a yang ada didalam li yang ada didalam ul. Spasi menandakan bahwa selector berada didalam
+    font-size: 12px;
+    font-variant: small-caps;
+    color: darkred;
+}
+*/
+
+p.cetak_tebal{ /*css tolong carikan saya elemen p yang juga memiliki elemen cetak tebal untuk diubah atributnya sebagai berikut*/
+    letter-spacing: 6px;
+}
+
+/*pseudo class*/
+
+.halo:link{ /*mengubah warna*/
+    color: chartreuse;
+}
+
+.halo:hover{ /*akan diaplikasikan ketika cursor berada diatas elemen*/
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.halo:active{ /*akan aktif ketika elemen diklik*/
+    color: deepskyblue;
+    font-style: italic;
+}
+
+.halo:visited{ /*akan aktif ketika elemen sudah pernah dikunjungi*/
+    color: red;
+    font-size: 50px;
+}
+
+li:first-child a{ /*css carikan saya a yang merupakan firschil dari li kemudian aplikasikan atribut berikut*/
+    color: green;
+}
+
+li:last-child a{ /*css carikan sata a yang merupakan last child dari li kemudian aplikasikan atribut berikut*/
+    color: red;
+}
+
+li:nth-child(2) a{ /*css carikan saya a yang merupakan child ke 2 dari li kemudian aplikasikan atribut berikut.*/
+    color: #127DA1;
+    /*untuk akan ke n, bisa gunakan 3n+2 dsb. kemudian bisa juga menggunakan even untuk genap dan odd untuk ganjil*/
+}
+
+li:nth-child(2) a:hover{ /*css carikan saya a yang berada didalam li anak kedua, kemudian ketika di hover aplikasikan atribut berikut*/
+    color: red;
+}
+
+p:first-of-type:hover{ /*karena p bukan merupakan child maka menggunakan first-of-type. Pada contoh ini saya menambahkan pseudo hover*/
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

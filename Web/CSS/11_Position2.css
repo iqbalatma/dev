@@ -1,0 +1,210 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+}
+
+/*position dengan value absolute sama saja seperti relative.
+Elemen akan naik satu dimensi, tetapi ruang di dimensi sebelumnya
+menjadi kosong sehinggu elemen dibawah akan naik keatas untuk 
+mengisi ruang tersebut. Ketika digerakkan top left botton right,
+maka elemen akan berpindah relative terhadap parentnya*/
+.satu {
+    background-color: violet;
+}
+
+.dua {
+    background-color: teal;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.tiga {
+    background-color: coral;
+    position: fixed;
+
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    border: 2px black solid;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.empat {
+    background-color: violet;
+}
+
+.lima {
+    background-color: teal;
+    position: absolute;
+    /*lima absolute dan relative terhadap parentnya.
+    Disini parentnya merupakan div container yang memiliki lebar 600px
+    dan tinggi 600px. Tetapi lima masih berada diluar border tersebut
+    Hal ini terjadi karena container tidak berada satu dimensi dengan 
+    lima. Kita perlu memindahkan dimensi tersebut dengan menambahkan position
+    relative karena kita membutuhkan ruang di dimensi sebelumnya untuk
+    penempatan elemen empat dan enam.*/
+    left: 100px;
+}
+
+.enam {
+    background-color: coral;
+}
+
+body {
+    height: 2000;
+}
+
+.tujuh1 {
+    background-color: black;
+    position: fixed;
+    left: 200px;
+    /*position fixed akan membuatnya relative terhadap window*/
+}

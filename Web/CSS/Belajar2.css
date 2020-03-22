@@ -1,0 +1,75 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    letter-spacing: 6px;
+    color: darkolivegreen;
+}
+
+p {
+    font-style: italic;
+}
+
+p span {
+    /*css carikan saya tag span, yang berada didalam elemen p*/
+    font-style: normal;
+    font-variant: small-caps;
+}
+
+a {
+    /*background-color: blue;
+    width: 20px;
+    height: 30px;
+    display: inline-block;*/
+    background-color: aquamarine
+}
+
+/*tag a memiliki display inline. Jadi akan membuatnya ditampilkan kesamping.
+berbeda dengan block yang akan ditampilkan kebawah. background pada tag a akan
+menyesuaikan dengan ukuran tulisannya. jika background trsebut ditambahkan width dan height
+maka tidak akan berubah karena default displaynya adalah inline. Jadi kita harus mengubah
+properti displaynya menjadi inline-block */
+
+.main {
+    background-color: lightblue;
+    width: 400px
+}
+
+.main h2 {
+    background-color: brown;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-kerning: auto;
+}
+
+.navigasi li {
+    /* cari li yang berada didalam elemen navigasi*/
+    display: inline;
+}
+
+.satu {
+    background-color: lightslategray;
+    width: 200px;
+    height: 200px;
+}
+
+.dua {
+    background-color: lightcoral;
+    width: 80%;
+    height: 9%;
+}
+
+.tiga {
+    width: 500px;
+    height: 40px;
+    background-color: brown;
+    overflow: auto;
+    /*overflow digunakan ketika teks melebihi blok lebar dan tinggi yang telah dibuat.
+    jika di isi dengan properti hidden maka teks yang lebih tersebut akan disembunyikan. 
+    jika di isi auto maka teks yang berlebih tersebut akan dibuat scroll.
+    
+}
+
+
+
+/*dua adalah class anak dari satu. nah lebar dan tingginya menggunakan % berarti lebar dan tingginya
+relative terhadap class parent. Misal class parent 100px, kemudian class child 30% maka class childnya akan seukuran 30 px*/

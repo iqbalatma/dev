@@ -1,0 +1,218 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background-color: none;
+
+}
+
+/*Menggunakan overflow pada kontainer, agar kontainer yang
+runtuh disesuaikan dengan isi konten. Jadi gambar yang sudah 
+ di float akan dianggap ada lagi */
+.container {
+	width: 600px;
+	margin: auto;
+	border: 1px black solid;
+	padding: 5px;
+	overflow: auto;
+}
+
+img {
+	float: left;
+}
+
+
+/*menggunakan kotak kosong yang nantinya akan diisi clear dengan
+value sesuai dengan float yang ingin dibersihkan. Simpan div kosong 
+tersebut dibawah tulisan */
+.container2 {
+	width: 600px;
+	margin: auto;
+	border: 1px black solid;
+	padding: 5px;
+	margin-top: 50px;
+}
+
+img {
+	float: left;
+}
+
+.clear {
+	clear: left;
+}
+
+
+.container3 {
+	width: 550px;
+	margin: auto;
+	margin-top: 200px;
+	padding: 0px;
+	border: 1px black solid;
+
+}
+
+.kotak {
+	width: 100px;
+	height: 100px;
+	background-color: brown;
+	text-align: center;
+	line-height: 100px;
+	margin: 3px;
+	float: left;
+	color: white;
+}
+
+.clear {
+	clear: left;
+}
+
+
+.container4 {
+	width: 550px;
+	margin: auto;
+	margin-top: 200px;
+	padding: 0px;
+	border: 1px black solid;
+
+}
+
+/*Menggunakan micro clearfix*/
+.cf:before,
+.cf:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.cf:after {
+	clear: both;
+}

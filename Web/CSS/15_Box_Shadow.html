@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div .satu {
+            width: 300px;
+            height: 300px;
+            background-color: #39b54a;
+            margin: 50px auto 50px;
+            /*value pada box shadow
+            <inset> <*x-offset> <*y-offset> <*blur> <spread> <*color>
+                */
+            box-shadow: 10px -5px 5px rgba(0, 0, 0, .55);
+        }
+
+        div .dua {
+            width: 300px;
+            height: 300px;
+            background-color: #39b54a;
+            margin: 50px auto 50px;
+            /*value pada box shadow
+            <inset> <*x-offset> <*y-offset> <*blur> <spread> <*color>
+                */
+            box-shadow: 10px -5px 5px 5px rgba(0, 0, 0, .55);
+            /*parameter keempat adalah spread*/
+            transition: .2s;
+        }
+
+        div .dua:hover {
+            box-shadow: 10px -5px 10px -20px rgba(0, 0, 0, .10);
+            margin-top: 30px;
+        }
+
+        div .tiga {
+            width: 300px;
+            height: 300px;
+            background-color: #39b54a;
+            margin: 50px auto 50px;
+            /*value pada box shadow
+            <inset> <*x-offset> <*y-offset> <*blur> <spread> <*color>
+                */
+            box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .55);
+            /*parameter keempat adalah spread
+            parameter inset mebuat bayangannya menjadi kearah dalam elemen*/
+        }
+
+        div .empat {
+            width: 300px;
+            height: 300px;
+            background-color: #39b54a;
+            margin: 50px auto 50px;
+            /*value pada box shadow
+            <inset> <*x-offset> <*y-offset> <*blur> <spread> <*color>
+                */
+            box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .55),
+                0 0 0 5px blue;
+            /*parameter keempat adalah spread
+            parameter inset mebuat bayangannya menjadi kearah dalam elemen*/
+            /*untuk membuat multiple shadow, beri koma diujung value box shadow
+            kemudian tambahkan value untuk shadow kedua.*/
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="satu"></div>
+        <div class="dua"></div>
+        <div class="tiga"></div>
+        <div class="empat"></div>
+    </div>
+</body>
+
+</html>
